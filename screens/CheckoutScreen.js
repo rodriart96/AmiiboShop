@@ -36,7 +36,7 @@ const CheckoutScreen = ({navigation}) => {
             return (
               <View style={styles.container} key={amiibo.id}>
                 <Card>
-                  <Card.Title> Resumen De Articulos</Card.Title>
+                  <Card.Title> Resumen De Articulo</Card.Title>
                   <View style={{flexDirection: 'row'}}>
                     <Card.Image
                       style={{padding: 0, width: 100, height: 130}}

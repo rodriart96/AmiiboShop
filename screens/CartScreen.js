@@ -67,7 +67,7 @@ const CartScreen = ({navigation}) => {
       </View>
       </View>
       <View style={{ position: 'absolute', left: 0, right: 0, bottom: 90, justifyContent: 'center', alignItems: 'center'}}>
-  <Button onPress={()=> navigation.navigate('Checkout')}   buttonStyle={styles.btnPlus} title='got to checkout'/>
+  <Button onPress={()=> navigation.navigate('Checkout')}   buttonStyle={styles.btnPlus} title='Ir a Checkout'/>
 </View>
       
     </ScrollView>
