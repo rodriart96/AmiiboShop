@@ -26,7 +26,6 @@ function DetailsScreen({route, navigation}) {
  function validateAmiibo(){
   cartStorage.products.map( product =>{
      setAmiiboValidation(product.id)
-     console.log(amiiboValidation)
   })
 }
 

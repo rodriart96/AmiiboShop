@@ -24,7 +24,7 @@ const CheckoutScreen = ({navigation}) => {
       quantity = arrayQuantity.reduce((a, b) => a + b, 0)
       setPrecio(amiibo.price * quantity)
     })
-  }, []);
+  }, [products]);
 
   return (
     <ScrollView>
