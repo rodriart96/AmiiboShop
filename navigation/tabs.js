@@ -4,18 +4,21 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
 import CheckoutScreen from '../screens/CheckoutScreen';
+import DetailsScreen from '../screens/DetailScreen';
+import HomeStackNavigator from './stack';
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
   return (
     <Tab.Navigator
       screenOptions={{
+        headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: [
           {
             display: 'flex',
             position: 'absolute',
-            bottom: 5,
+            bottom: 0,
             left: 5,
             right: 5,
             elevation: 0,
@@ -26,11 +29,11 @@ const Tabs = () => {
           },
           null,
         ],
-        style: {},
       }}>
+      
       <Tab.Screen
-        name="Home"
-        component={HomeScreen}
+        name="HomeTab"
+        component={HomeStackNavigator}
         options={{
           tabBarIcon: ({focused}) => (
             <View
